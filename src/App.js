@@ -1,5 +1,4 @@
 import "./App.css";
-import Componente from "./components/Componente";
 import Produto from "./components/Produto";
 
 function App() {
@@ -21,8 +20,10 @@ function App() {
     <div className="App">
       <h1>Olá React De novo!</h1>
       <h2>vou ficar aqui por mais tempo ainda!{conta(hora)}</h2>
-      <Componente />
       <Produto foto={pic} nome={nome} preço={price} />
+      <Produto nome={nome} preço={price} />
+      <Produto foto={pic} preço={price} />
+      <Produto />
     </div>
   );
 }
