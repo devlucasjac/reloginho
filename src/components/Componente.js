@@ -1,8 +1,9 @@
 function Componente() {
   return (
-    <div>
+    //esta tag sem declaração "<></> se chama fragment"
+    <>
       <p>Este é um componente</p>
-    </div>
+    </>
   );
 }
 
