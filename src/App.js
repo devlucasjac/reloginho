@@ -1,17 +1,13 @@
 import "./App.css";
-import Componente from "./components/Componente";
-import Produto from "./components/Produto";
+import Eventos from "./components/Eventos";
+import Form from "./components/Form";
 
 function App() {
-  let hora = 4;
-  let pic =
-    "https://m.media-amazon.com/images/I/71oNM3Qg57L._AC_UF894,1000_QL80_.jpg";
-  let nome = "Liquidificador";
-  let price = 319.5;
+  let hora = 5;
 
   function conta(a) {
     let b = 1;
-    for (let x = 1; x < a; x++) {
+    for (let x = 1; x <= a; x++) {
       b *= x;
     }
     return b;
@@ -20,9 +16,9 @@ function App() {
   return (
     <div className="App">
       <h1>Olá React De novo!</h1>
-      <h2>vou ficar aqui por mais tempo ainda!{conta(hora)}</h2>
-      <Componente />
-      <Produto foto={pic} nome={nome} preço={price} />
+      <h2>vou ficar aqui por mais tempo ainda! {conta(hora)}</h2>
+      <Eventos />
+      <Form nome="lucas" />
     </div>
   );
 }
