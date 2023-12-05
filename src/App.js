@@ -17,7 +17,8 @@ function App() {
     <div className="App">
       <h1>Olá React De novo!</h1>
       <h2>vou ficar aqui por mais tempo ainda! {conta(hora)}</h2>
-      <Eventos />
+      <Eventos numero={1} />
+      <Eventos numero={2} />
       <Form nome="lucas" />
     </div>
   );

@@ -1,10 +1,12 @@
-function Eventos() {
+import Button from "./Button";
+
+function Eventos({ numero }) {
   function clica(e) {
-    console.log("clicou");
+    console.log(`clicou ${numero}`);
   }
   return (
     <>
-      <button onClick={clica}>Clique aqui!</button>
+      <Button event={clica} text="primeiro evento" />
     </>
   );
 }
