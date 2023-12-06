@@ -9,7 +9,10 @@ function Form({ nome }) {
     setUserEmail(email);
     console.log("cadastrou " + nome);
   }
-
+  function limparEmail(e) {
+    e.preventDefault();
+    setUserEmail("");
+  }
   return (
     <form>
       <p>Cadastre seu e-mail: {nome}</p>
@@ -27,10 +30,13 @@ function Form({ nome }) {
       {
         /* Aqui é feita a renderização condicional, se utilizando o state userEmail
       como parametro onde o simbolo && funciona como uma condicional if/else.*/
-        userEmail && (
+        userEmail ? (
           <div>
             <h2>o e-mail {email} foi cadastrado</h2>
+            <button onClick={limparEmail}>Limpar e-mail</button>
           </div>
+        ) : (
+          <p>Não há usuario cadastrado</p>
         )
       }
     </form>
