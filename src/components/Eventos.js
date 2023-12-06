@@ -6,7 +6,11 @@ function Eventos({ numero }) {
   }
   return (
     <>
-      <Button event={clica} text="primeiro evento" />
+      <Button /*Logo abaixo pode se ver a passagem de um metodo 
+      por meio de um prop */
+        event={clica}
+        text="primeiro evento"
+      />
     </>
   );
 }
