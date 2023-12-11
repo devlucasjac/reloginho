@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-function Form({ nome }) {
-  const [email, setEmail] = useState();
+function Form({ nome, setEmail, email }) {
   const [userEmail, setUserEmail] = useState();
 
   function cadastro(e) {
