@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import Empresa from "./pages/Empresa";
 import Home from "./pages/Home";
 import Contrato from "./pages/Contrato";
@@ -18,6 +19,8 @@ function App() {
 
         <Route path="contrato" element={<Contrato />} />
       </Routes>
+      {/* Acesse o Componente Footer para ver como se utiliza a biblioteca React-Icon*/}
+      <Footer />
     </Router>
   );
 }
